@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Tweet Title+Short",
+  "version":"0.1",
+  "description": "Tweet title and short url from active tab.",
+
+  "icons": {
+    // TODO:: create icon
+    "16": "icons/icon_16.png",
+    "48": "icons/icon_48.png",
+    "128": "icons/icon_128.png"
+  },
+
+  "browser_action": {
+    // TODO:: create icon
+    "default_icon": "icons/icon_16.png"
+  },
+
+  "background": {
+    "scripts": ["js/config.js", "js/jquery.min.js", "js/background.js"],
+    "persistent": false
+  },
+
+  "permissions": [
+    "activeTab",
+    "https://www.googleapis.com/urlshortener"
+  ]
+}
